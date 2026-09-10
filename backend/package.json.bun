@@ -1,0 +1,27 @@
+{
+  "name": "rating-app-backend",
+  "version": "1.0.0",
+  "description": "Store Rating Platform - Backend",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/server.js",
+    "dev": "bun --watch src/server.js",
+    "prisma:generate": "bunx prisma generate",
+    "prisma:migrate": "bunx prisma migrate dev",
+    "prisma:studio": "bunx prisma studio",
+    "build": "bun build src/server.js --outdir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.1.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.7.1"
+  }
+}
